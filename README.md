@@ -16,6 +16,6 @@ The frontend, calc.html, contains a javascript which allows for AJAX requests to
 
 When the submit button is pressed, the frontend gathers all information entered on the page and stores it in a dictionary, which gets sent to flask_brevets where it is stored in a dictionary. When the display button is pressed, the frontend calls the back end to retrieve the dicitonary from the database and then parses through the dictionary to enter the respective fields with their values.
 
-A file called test_db.py is provided along with test_acp_times.py to hold test cases to ensure that the calculations in acp_times.py are correct and information stored and retrieved in Mongo is correct. Some tests contains variables which can be manipulated to ensure different scenarios are correct. To run the tests, in your terminal, make sure your current directory is "brevets" and run the command "nosetests tests".
+A file called test_flask_brevets.py is provided along with test_acp_times.py to hold test cases to ensure that the calculations in acp_times.py are correct and information stored and retrieved in Mongo is correct. Some tests contains variables which can be manipulated to ensure different scenarios are correct. To run the tests, in your terminal, make sure your current directory is "brevets" and run the command "nosetests tests".
 
 Make sure to run the command "docker compose down --rmi local" to stop the program and delete all local images when finished running the program.
